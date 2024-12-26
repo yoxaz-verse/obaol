@@ -48,12 +48,12 @@ const social = [
 const home = {
   label: "Home",
   title: `${person.name}`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Transforming Global Agri Trade with OBAOL</>,
+  description: `Transforming Global Agri Trade with ${person.firstName}`,
+  headline: <>Transforming Global Agri Trade with ${person.firstName}</>,
   subline: (
     <>
-      Evolution of Commodity Trading with <InlineCode>OBAOL Supreme</InlineCode>{" "}
-      <br />
+      Evolution of Commodity Trading with{" "}
+      <InlineCode>${person.firstName} Supreme</InlineCode> <br />
       by Connecting farmers with the world by sourcing premium-quality spices,
       rice, and pulses from India. ,
     </>
@@ -301,7 +301,7 @@ const work = {
 
 const gallery = {
   label: "Gallery",
-  title: "Inside",
+  title: `Inside ${person.firstName}`,
   description: `A photo collection by ${person.name}`,
   // Images from https://pexels.com
   images: [
