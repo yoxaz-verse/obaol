@@ -130,9 +130,15 @@ const about = {
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
+          // {
+          //   src: "/images/about/qualityAssurance.jpg",
+          //   alt: "Obaol Quality Assurance",
+          //   width: 16,
+          //   height: 9,
+          // },
           {
-            src: "/images/about/qualityAssurance.jpg",
-            alt: "Obaol Quality Assurance",
+            src: "/images/gallery/img (8).JPG",
+            alt: "Obaol Logistics",
             width: 16,
             height: 9,
           },
@@ -170,12 +176,12 @@ const about = {
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/about/documentation.jpg",
-            alt: "Export Documentation",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/about/documentation.jpg",
+          //   alt: "Export Documentation",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
       {
@@ -190,12 +196,12 @@ const about = {
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/about/Insights.jpg",
-            alt: "Obaol Insights",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/about/Insights.jpg",
+          //   alt: "Obaol Insights",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
     ],
