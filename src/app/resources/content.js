@@ -24,14 +24,14 @@ const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    name: "Instagram",
+    icon: "instagram",
+    link: "https://www.instagram.com/obaol_supreme/",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/company/obaol/",
   },
   {
     name: "X",
@@ -73,17 +73,17 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/obaol/15min",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for
-        transforming complex challenges into simple, elegant design solutions.
-        Her work spans digital interfaces, interactive experiences, and the
-        convergence of design and technology.
+        OBAOL Supreme specializes in global sourcing and export of
+        premium-quality agricultural products from India. With expertise in
+        spices, rice, and pulses, we connect farmers to global markets, ensuring
+        quality, sustainability, and competitive pricing
       </>
     ),
   },
@@ -104,8 +104,14 @@ const about = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/about/sourcing.jpg",
+            alt: "Obaol Sourcing",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/about/sourcing3.jpg",
+            alt: "Obaol Sourcing",
             width: 16,
             height: 9,
           },
@@ -125,8 +131,8 @@ const about = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/about/qualityAssurance.jpg",
+            alt: "Obaol Quality Assurance",
             width: 16,
             height: 9,
           },
@@ -145,8 +151,8 @@ const about = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/gallery/img (13).JPG",
+            alt: "Obaol Logistics",
             width: 16,
             height: 9,
           },
@@ -165,8 +171,8 @@ const about = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/about/documentation.jpg",
+            alt: "Export Documentation",
             width: 16,
             height: 9,
           },
@@ -185,8 +191,8 @@ const about = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/about/Insights.jpg",
+            alt: "Obaol Insights",
             width: 16,
             height: 9,
           },
@@ -221,12 +227,10 @@ const about = {
             <ul>
               <li>
                 Exported over [10 metric tons] of spices, rice, and pulses in
-                2023{" "}
+                2024{" "}
               </li>
-              <li>Partnered with over [X] importers globally.</li>
-              <li>
-                Reduced transit times by [X%] through optimized logistics.
-              </li>
+              <li>Partnered with over 100 importers globally.</li>
+              <li>Reduced transit times by 30% through optimized logistics.</li>
             </ul>
             .
           </>
@@ -248,18 +252,18 @@ const about = {
           </>
         ),
         images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-02.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
+          // {
+          //   src: "/images/projects/project-01/cover-03.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
       {
@@ -271,12 +275,12 @@ const about = {
           </>
         ),
         images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-04.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
     ],
