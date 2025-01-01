@@ -103,18 +103,18 @@ const about = {
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/about/sourcing.jpg",
-            alt: "Obaol Sourcing",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/about/sourcing3.jpg",
-            alt: "Obaol Sourcing",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/about/sourcing.jpg",
+          //   alt: "Obaol Sourcing",
+          //   width: 16,
+          //   height: 9,
+          // },
+          // {
+          //   src: "/images/about/sourcing3.jpg",
+          //   alt: "Obaol Sourcing",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
 
