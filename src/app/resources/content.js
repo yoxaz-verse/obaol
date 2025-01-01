@@ -115,6 +115,12 @@ const about = {
           //   width: 16,
           //   height: 9,
           // },
+          {
+            src: "/images/gallery/img (8).JPG",
+            alt: "Obaol Logistics",
+            width: 16,
+            height: 9,
+          },
         ],
       },
 
@@ -136,12 +142,6 @@ const about = {
           //   width: 16,
           //   height: 9,
           // },
-          {
-            src: "/images/gallery/img (8).JPG",
-            alt: "Obaol Logistics",
-            width: 16,
-            height: 9,
-          },
         ],
       },
       {
