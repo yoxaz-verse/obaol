@@ -217,8 +217,7 @@ const about = {
             <ul>
               <li>Europe: Germany, UK, Italy, France </li>
               <li>
-                Asia: Middle East, Southeast Asia, China Europe: Germany, UK,
-                Italy, France North America: USA, Canada
+                Asia: Middle East, Southeast Asia, China 
               </li>
               <li>North America: USA, Canada</li>
             </ul>
