@@ -216,9 +216,7 @@ const about = {
           <>
             <ul>
               <li>Europe: Germany, UK, Italy, France </li>
-              <li>
-                Asia: Middle East, Southeast Asia, China 
-              </li>
+              <li>Asia: Middle East, Southeast Asia, China</li>
               <li>North America: USA, Canada</li>
             </ul>
           </>
@@ -232,7 +230,7 @@ const about = {
             <ul>
               <li>
                 Exported over [10 metric tons] of spices, rice, and pulses in
-                2024{" "}
+                2025{" "}
               </li>
               <li>Partnered with over 100 importers globally.</li>
               <li>Reduced transit times by 30% through optimized logistics.</li>
