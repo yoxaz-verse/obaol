@@ -33,6 +33,9 @@ export async function generateMetadata({
     metadataBase: new URL(`https://${baseURL}/${locale}`),
     title: home.title,
     description: home.description,
+    icons: {
+      icon: "/favicon.ico", // ✅ Add this line
+    },
     openGraph: {
       title: `${person.firstName}'s Portfolio`,
       description: "Portfolio website showcasing my work.",
