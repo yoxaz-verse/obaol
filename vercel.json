@@ -9,12 +9,28 @@
       "destination": "https://overview.obaol.com/$1"
     },
     {
+      "source": "/onboarding",
+      "destination": "https://onboarding.obaol.com"
+    },
+    {
+      "source": "/onboarding/(.*)",
+      "destination": "https://onboarding.obaol.com/$1"
+    },
+    {
       "source": "/automate",
       "destination": "https://automate.obaol.com"
     },
     {
       "source": "/automate/(.*)",
       "destination": "https://automate.obaol.com/$1"
+    },
+    {
+      "source": "/cardamom",
+      "destination": "https://cardamom.obaol.com"
+    },
+    {
+      "source": "/gain",
+      "destination": "https://gain.obaol.com"
     }
   ]
 }
