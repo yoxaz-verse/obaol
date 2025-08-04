@@ -1,3 +1,5 @@
+// src/middleware.ts
+
 import createMiddleware from "next-intl/middleware";
 import { routing } from "./i18n/routing";
 
@@ -5,7 +7,8 @@ export default createMiddleware(routing);
 
 export const config = {
   matcher: [
-    "/((?!api|_next|_vercel|.*\\..*).*)", // handles everything except system files
-    "/(en|id)/:path*", // also allow localized paths
+    "/", // root
+    "/((?!api|_next|_vercel|.*\\..*).*)", // everything else
+    "/(en|id)/:path*", // locale-prefixed paths
   ],
 };
