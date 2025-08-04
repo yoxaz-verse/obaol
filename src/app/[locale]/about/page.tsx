@@ -219,7 +219,7 @@ export default function About({
               <Flex direction="column" fillWidth gap="l" marginBottom="40">
                 {about.work.experiences.map((experience, index) => (
                   <Flex
-                    key={`${experience.company}-${experience.role}-${index}`}
+                    key={`${experience.company}-${index}`}
                     fillWidth
                     direction="column"
                   >
@@ -236,7 +236,7 @@ export default function About({
                         variant="heading-default-xs"
                         onBackground="neutral-weak"
                       >
-                        {experience.timeframe}
+                        {/* {experience.timeframe}ssssssssssssssss */}
                       </Text>
                     </Flex>
                     <Text
@@ -244,7 +244,7 @@ export default function About({
                       onBackground="brand-weak"
                       marginBottom="m"
                     >
-                      {experience.role}
+                      {/* iiiiiiiiii i {experience.role} */}
                     </Text>
                     <Flex as="ul" direction="column" gap="16">
                       {experience.achievements.map(

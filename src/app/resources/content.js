@@ -9,7 +9,7 @@ const person = {
   role: "Supreme",
   avatar: "/images/OBAOL.png",
   location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -185,9 +185,10 @@ const about = {
         name: "Impact Highlights",
         description: (
           <ul>
-            <li>Over 10,000 MT exported in 2025 across multiple categories</li>
-            <li>More than 100 verified international buyers</li>
+            {/* <li>Over 10,000 MT exported in 2025 across multiple categories</li> */}
+            <li>More than 500 verified international suppliers</li>
             <li>Reduced lead time by 30% via streamlined operations</li>
+            <li>More than 150 verified products</li>
           </ul>
         ),
       },
