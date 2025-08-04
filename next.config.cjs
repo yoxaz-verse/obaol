@@ -92,3 +92,8 @@ const nextConfig = {
 };
 
 export default withNextIntl(withMDX(nextConfig));
+// next-intl.config.ts
+export const i18nOptions = {
+  locales: ["en", "id"],
+  defaultLocale: "en",
+};
