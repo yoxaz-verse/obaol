@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/overview/(.*)",
+      "destination": "https://overview.obaol.com/$1"
+    }
+  ]
+}
