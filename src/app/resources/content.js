@@ -47,23 +47,29 @@ const social = [
 
 const home = {
   label: "Home",
-  title: `${person.name}`,
-  description: `Transforming Global Agri Trade with ${person.firstName}`,
-  headline: <>Transforming Global Agri Trade with ${person.firstName}</>,
+  title: "OBAOL – Trusted Agro Trade Platform",
+  description:
+    "Empowering India’s Agro Trade with Verified, Real-time, and Transparent Solutions",
+  headline: (
+    <>Empowering India’s Agro Trade with Trust, Technology & Transparency</>
+  ),
   subline: (
     <>
-      Evolution of Commodity Trading with{" "}
-      <InlineCode>${person.firstName} Supreme</InlineCode> <br />
-      by Connecting farmers with the world by sourcing premium-quality spices,
-      rice, and pulses from India. ,
+      Built for suppliers, traders, exporters, and farmers,{" "}
+      <InlineCode>OBAOL</InlineCode> is transforming agriculture commerce by
+      enabling verified pricing, scam-proof deals, and seamless trade flows
+      across India and beyond. <br />
+      Join the <InlineCode>GAIN Network</InlineCode> to connect with real
+      buyers, share market updates, and grow through trust.
     </>
   ),
 };
 
 const about = {
-  label: "About Obaol",
-  title: "About Obaol",
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  label: "About OBAOL",
+  title: "About OBAOL",
+  description:
+    "Built for India’s Agro Future — Trusted, Transparent, Tech-Driven",
   tableOfContent: {
     display: true,
     subItems: true,
@@ -77,214 +83,139 @@ const about = {
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "What is OBAOL?",
     description: (
       <>
-        OBAOL Supreme specializes in global sourcing and export of
-        premium-quality agricultural products from India. With expertise in
-        spices, rice, and pulses, we connect farmers to global markets, ensuring
-        quality, sustainability, and competitive pricing
+        OBAOL (Organised Buyers & Agro Online Link) is a next-gen B2B agro-trade
+        platform built to solve the biggest pain points in agricultural trading
+        — fake prices, scam leads, and unverified buyers. We empower verified
+        farmers, traders, and exporters to do clean, trusted business with daily
+        live pricing, digital product sharing, and end-to-end trade support. Our
+        mission is to transform Indian agriculture into a reliable, transparent,
+        and digitally connected economy.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
-    title: "Our Service",
+    display: true,
+    title: "Our Core Services",
     experiences: [
       {
         company: "Sourcing",
-        timeframe: "",
-        role: "",
         achievements: [
           <>
-            Connecting with trusted farmers and suppliers across India for
-            premium agricultural products.
+            Partnering with verified farmers and suppliers across India to
+            source spices, rice, pulses, and other agro-commodities.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
-          // {
-          //   src: "/images/about/sourcing.jpg",
-          //   alt: "Obaol Sourcing",
-          //   width: 16,
-          //   height: 9,
-          // },
-          // {
-          //   src: "/images/about/sourcing3.jpg",
-          //   alt: "Obaol Sourcing",
-          //   width: 16,
-          //   height: 9,
-          // },
           {
             src: "/images/gallery/img (8).JPG",
-            alt: "Obaol Logistics",
+            alt: "OBAOL Sourcing",
             width: 16,
             height: 9,
           },
         ],
       },
-
       {
-        company: "Quality Assurance",
-        timeframe: "",
-        role: "",
+        company: "Quality Control",
         achievements: [
           <>
-            Ensuring every product meets international quality and safety
-            standards
+            Rigorous QC processes including moisture testing, foreign matter
+            checks, and origin documentation to prevent malpractices.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          // {
-          //   src: "/images/about/qualityAssurance.jpg",
-          //   alt: "Obaol Quality Assurance",
-          //   width: 16,
-          //   height: 9,
-          // },
-        ],
+        images: [],
       },
       {
-        company: "Logistics",
-        timeframe: "",
-        role: "",
+        company: "Verified Trade Network (GAIN)",
         achievements: [
           <>
-            Streamlined shipping and transportation solutions to deliver goods
-            worldwide on time.
+            Our exclusive GAIN community connects real buyers, verified
+            suppliers, and agro professionals to share updates and close trusted
+            deals.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Logistics & Documentation",
+        achievements: [
+          <>
+            From packaging to port delivery — we manage shipping,
+            certifications, and export compliance to ensure smooth global trade.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/gallery/img (13).JPG",
-            alt: "Obaol Logistics",
+            alt: "OBAOL Logistics",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Export Documentation",
-        timeframe: "",
-        role: "",
+        company: "Live Pricing & Market Intelligence",
         achievements: [
           <>
-            Handling all customs paperwork, certifications, and trade compliance
-            for smooth international transactions.
+            Real-time mandi and export prices for major commodities like
+            turmeric, cardamom, and rice to help members avoid fake quotes.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          // {
-          //   src: "/images/about/documentation.jpg",
-          //   alt: "Export Documentation",
-          //   width: 16,
-          //   height: 9,
-          // },
-        ],
-      },
-      {
-        company: "Market Insights",
-        timeframe: "",
-        role: "",
-        achievements: [
-          <>
-            Providing clients with the latest market trends and pricing
-            intelligence.
-          </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          // {
-          //   src: "/images/about/Insights.jpg",
-          //   alt: "Obaol Insights",
-          //   width: 16,
-          //   height: 9,
-          // },
-        ],
+        images: [],
       },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Global Reach",
     institutions: [
       {
-        name: "List of Regions",
+        name: "Export Destinations",
         description: (
-          <>
-            <ul>
-              <li>Europe: Germany, UK, Italy, France </li>
-              <li>Asia: Middle East, Southeast Asia, China</li>
-              <li>North America: USA, Canada</li>
-            </ul>
-          </>
+          <ul>
+            <li>Europe: Germany, UK, Italy, France</li>
+            <li>Asia: Middle East, Southeast Asia, China</li>
+            <li>North America: USA, Canada</li>
+          </ul>
         ),
       },
       {
-        name: "Achievements Highlight",
+        name: "Impact Highlights",
         description: (
-          <>
-            {" "}
-            <ul>
-              <li>
-                Exported over [10 metric tons] of spices, rice, and pulses in
-                2025{" "}
-              </li>
-              <li>Partnered with over 100 importers globally.</li>
-              <li>Reduced transit times by 30% through optimized logistics.</li>
-            </ul>
-            .
-          </>
+          <ul>
+            <li>Over 10,000 MT exported in 2025 across multiple categories</li>
+            <li>More than 100 verified international buyers</li>
+            <li>Reduced lead time by 30% via streamlined operations</li>
+          </ul>
         ),
       },
     ],
   },
-
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Our Capabilities",
     skills: [
       {
-        title: "Sourcing Expertise",
+        title: "Digital Sourcing Expertise",
         description: (
           <>
-            Comprehensive knowledge of spices, rice, pulses, and their global
-            demand trends.
+            Deep product knowledge in spices, rice, pulses — backed by verified
+            crop data and real-time sourcing tools.
           </>
         ),
-        images: [
-          // {
-          //   src: "/images/projects/project-01/cover-02.jpg",
-          //   alt: "Project image",
-          //   width: 16,
-          //   height: 9,
-          // },
-          // {
-          //   src: "/images/projects/project-01/cover-03.jpg",
-          //   alt: "Project image",
-          //   width: 16,
-          //   height: 9,
-          // },
-        ],
+        images: [],
       },
       {
-        title: "Supply Chain Management",
+        title: "Trade & Logistics Tech",
         description: (
           <>
-            Expertise in logistics and ensuring timely, efficient delivery to
-            global buyers.
+            Advanced supply chain tracking, documentation workflows, and partner
+            network built for fast, compliant exports.
           </>
         ),
-        images: [
-          // {
-          //   src: "/images/projects/project-01/cover-04.jpg",
-          //   alt: "Project image",
-          //   width: 16,
-          //   height: 9,
-          // },
-        ],
+        images: [],
       },
     ],
   },
