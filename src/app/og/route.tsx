@@ -13,7 +13,7 @@ export async function GET(request: Request) {
     const fontData = await font;
 
     const t = await getTranslations();
-    const { person } = renderContent(t);
+    const { company } = renderContent(t);
 
     return new ImageResponse(
         (
@@ -51,7 +51,7 @@ export async function GET(request: Request) {
                             alignItems: 'center',
                             gap: '5rem'
                         }}>
-                        <img src={'https://' + baseURL + person.avatar}
+                        <img src={'https://' + baseURL + company.avatar}
                             style={{
                                 width: '12rem',
                                 height: '12rem',
@@ -71,7 +71,7 @@ export async function GET(request: Request) {
                                     whiteSpace: 'pre-wrap',
                                     textWrap: 'balance',
                                 }}>
-                                {person.name}
+                                {company.name}
                             </span>
                             <span
                                 style={{
@@ -81,7 +81,7 @@ export async function GET(request: Request) {
                                     textWrap: 'balance',
                                     opacity: '0.6'
                                 }}>
-                                {person.role}
+                                {company.role}
                             </span>
                         </div>
                     </div>

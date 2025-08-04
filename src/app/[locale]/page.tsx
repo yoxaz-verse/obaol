@@ -58,7 +58,7 @@ export default function Home({
 }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations();
-  const { home, about, person, newsletter } = renderContent(t);
+  const { home, about, company, newsletter } = renderContent(t);
   return (
     <Flex
       maxWidth="m"
@@ -80,10 +80,10 @@ export default function Home({
             image: `${baseURL}/og?title=${encodeURIComponent(home.title)}`,
             publisher: {
               "@type": "Person",
-              name: person.name,
+              name: company.name,
               image: {
                 "@type": "ImageObject",
-                url: `${baseURL}${person.avatar}`,
+                url: `${baseURL}${company.avatar}`,
               },
             },
           }),
@@ -117,7 +117,7 @@ export default function Home({
                 {about.avatar.display && (
                   <Avatar
                     style={{ marginLeft: "-0.75rem", marginRight: "0.25rem" }}
-                    src={person.avatar}
+                    src={company.avatar}
                     size="m"
                   />
                 )}

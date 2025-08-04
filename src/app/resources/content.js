@@ -9,7 +9,7 @@ const person = {
   role: "Supreme",
   avatar: "/images/OBAOL.png",
   location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["English", "Malayalam"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -31,7 +31,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/obaol/",
+    link: "https://www.linkedin.com/service/obaol/",
   },
   {
     name: "X",
@@ -99,10 +99,10 @@ const about = {
   work: {
     display: true,
     title: "Our Core Services",
-    experiences: [
+    services: [
       {
-        company: "Sourcing",
-        achievements: [
+        service: "Sourcing",
+        description: [
           <>
             Partnering with verified farmers and suppliers across India to
             source spices, rice, pulses, and other agro-commodities.
@@ -118,8 +118,8 @@ const about = {
         ],
       },
       {
-        company: "Quality Control",
-        achievements: [
+        service: "Quality Control",
+        description: [
           <>
             Rigorous QC processes including moisture testing, foreign matter
             checks, and origin documentation to prevent malpractices.
@@ -128,8 +128,8 @@ const about = {
         images: [],
       },
       {
-        company: "Verified Trade Network (GAIN)",
-        achievements: [
+        service: "Verified Trade Network (GAIN)",
+        description: [
           <>
             Our exclusive GAIN community connects real buyers, verified
             suppliers, and agro professionals to share updates and close trusted
@@ -139,8 +139,8 @@ const about = {
         images: [],
       },
       {
-        company: "Logistics & Documentation",
-        achievements: [
+        service: "Logistics & Documentation",
+        description: [
           <>
             From packaging to port delivery — we manage shipping,
             certifications, and export compliance to ensure smooth global trade.
@@ -156,8 +156,8 @@ const about = {
         ],
       },
       {
-        company: "Live Pricing & Market Intelligence",
-        achievements: [
+        service: "Live Pricing & Market Intelligence",
+        description: [
           <>
             Real-time mandi and export prices for major commodities like
             turmeric, cardamom, and rice to help members avoid fake quotes.
@@ -167,10 +167,10 @@ const about = {
       },
     ],
   },
-  studies: {
+  specialties: {
     display: true,
     title: "Global Reach",
-    institutions: [
+    specialty: [
       {
         name: "Export Destinations",
         description: (
@@ -194,10 +194,10 @@ const about = {
       },
     ],
   },
-  technical: {
+  capabilities: {
     display: true,
     title: "Our Capabilities",
-    skills: [
+    capability: [
       {
         title: "Digital Sourcing Expertise",
         description: (

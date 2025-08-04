@@ -6,7 +6,6 @@ import {
   Icon,
   IconButton,
   SmartImage,
-  Tag,
   Text,
 } from "@/once-ui/components";
 import { baseURL, renderContent } from "@/app/resources";
@@ -21,7 +20,7 @@ export async function generateMetadata({
   params: { locale: string };
 }) {
   const t = await getTranslations();
-  const { person, about, social } = renderContent(t);
+  const { company, about, social } = renderContent(t);
   const title = about.title;
   const description = about.description;
   const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
@@ -57,7 +56,7 @@ export default function About({
 }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations();
-  const { person, about, social } = renderContent(t);
+  const { company, about, social } = renderContent(t);
   const structure = [
     {
       title: about.intro.title,
@@ -67,17 +66,19 @@ export default function About({
     {
       title: about.work.title,
       display: about.work.display,
-      items: about.work.experiences.map((experience) => experience.company),
+      items: about.work.services.map((ser) => ser.service),
     },
     {
-      title: about.studies.title,
-      display: about.studies.display,
-      items: about.studies.institutions.map((institution) => institution.name),
+      title: about.specialties.title,
+      display: about.specialties.display,
+      items: about.specialties.specialty.map((specialty) => specialty.name),
     },
     {
-      title: about.technical.title,
-      display: about.technical.display,
-      items: about.technical.skills.map((skill) => skill.title),
+      title: about.capabilities.title,
+      display: about.capabilities.display,
+      items: about.capabilities.capability.map(
+        (capability) => capability.title
+      ),
     },
   ];
   return (
@@ -88,18 +89,18 @@ export default function About({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Person",
-            name: person.name,
-            jobTitle: person.role,
+            "@type": "Company",
+            name: company.name,
+            jobTitle: company.role,
             description: about.intro.description,
             url: `https://${baseURL}/about`,
-            image: `${baseURL}/images/${person.avatar}`,
+            image: `${baseURL}/images/${company.avatar}`,
             sameAs: social
               .filter((item) => item.link && !item.link.startsWith("mailto:")) // Filter out empty links and email links
               .map((item) => item.link),
             worksFor: {
               "@type": "Organization",
-              name: about.work.experiences[0].company || "",
+              name: company.name,
             },
           }),
         }}
@@ -148,7 +149,7 @@ export default function About({
                 marginBottom="m"
                 alignItems="center"
               >
-                <Avatar src={person.avatar} size="l" />
+                <Avatar src={company.avatar} size="l" />
                 <Flex paddingLeft="12">
                   <Icon name="calendar" onBackground="brand-weak" />
                 </Flex>
@@ -162,14 +163,14 @@ export default function About({
               </Flex>
             )}
             <Heading className={styles.textAlign} variant="display-strong-xl">
-              {person.name}
+              {company.name}
             </Heading>
             <Text
               className={styles.textAlign}
               variant="display-default-xs"
               onBackground="neutral-weak"
             >
-              {person.role}
+              {company.role}
             </Text>
             {social.length > 0 && (
               <Flex
@@ -217,9 +218,9 @@ export default function About({
                 {about.work.title}
               </Heading>
               <Flex direction="column" fillWidth gap="l" marginBottom="40">
-                {about.work.experiences.map((experience, index) => (
+                {about.work.services.map((ser, index) => (
                   <Flex
-                    key={`${experience.company}-${index}`}
+                    key={`${ser.service}-${index}`}
                     fillWidth
                     direction="column"
                   >
@@ -229,14 +230,14 @@ export default function About({
                       alignItems="flex-end"
                       marginBottom="4"
                     >
-                      <Text id={experience.company} variant="heading-strong-l">
-                        {experience.company}
+                      <Text id={ser.service} variant="heading-strong-l">
+                        {ser.service}
                       </Text>
                       <Text
                         variant="heading-default-xs"
                         onBackground="neutral-weak"
                       >
-                        {/* {experience.timeframe}ssssssssssssssss */}
+                        {/* {ser.timeframe}ssssssssssssssss */}
                       </Text>
                     </Flex>
                     <Text
@@ -244,24 +245,24 @@ export default function About({
                       onBackground="brand-weak"
                       marginBottom="m"
                     >
-                      {/* iiiiiiiiii i {experience.role} */}
+                      {/* iiiiiiiiii i {ser.role} */}
                     </Text>
                     <Flex as="ul" direction="column" gap="16">
-                      {experience.achievements.map(
+                      {ser.description.map(
                         (achievement: string, index: any) => (
                           <Text
                             as="li"
                             variant="body-default-m"
-                            key={`${experience.company}-${index}`}
+                            key={`${ser.service}-${index}`}
                           >
                             {achievement}
                           </Text>
                         )
                       )}
                     </Flex>
-                    {experience.images.length > 0 && (
+                    {ser.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" paddingLeft="40" wrap>
-                        {experience.images.map((image, index) => (
+                        {ser.images.map((image: any, index: any) => (
                           <Flex
                             key={index}
                             border="neutral-medium"
@@ -286,63 +287,63 @@ export default function About({
               </Flex>
             </>
           )}
-          {about.studies.display && (
+          {about.specialties.display && (
             <>
               <Heading
                 as="h2"
-                id={about.studies.title}
+                id={about.specialties.title}
                 variant="display-strong-s"
                 marginBottom="m"
               >
-                {about.studies.title}
+                {about.specialties.title}
               </Heading>
               <Flex direction="column" fillWidth gap="l" marginBottom="40">
-                {about.studies.institutions.map((institution, index) => (
+                {about.specialties.specialty.map((specialty, index) => (
                   <Flex
-                    key={`${institution.name}-${index}`}
+                    key={`${specialty.name}-${index}`}
                     fillWidth
                     gap="4"
                     direction="column"
                   >
-                    <Text id={institution.name} variant="heading-strong-l">
-                      {institution.name}
+                    <Text id={specialty.name} variant="heading-strong-l">
+                      {specialty.name}
                     </Text>
                     <Text
                       variant="heading-default-xs"
                       onBackground="neutral-weak"
                     >
-                      {institution.description}
+                      {specialty.description}
                     </Text>
                   </Flex>
                 ))}
               </Flex>
             </>
           )}
-          {about.technical.display && (
+          {about.capabilities.display && (
             <>
               <Heading
                 as="h2"
-                id={about.technical.title}
+                id={about.capabilities.title}
                 variant="display-strong-s"
                 marginBottom="40"
               >
-                {about.technical.title}
+                {about.capabilities.title}
               </Heading>
               <Flex direction="column" fillWidth gap="l">
-                {about.technical.skills.map((skill, index) => (
+                {about.capabilities.capability.map((capability, index) => (
                   <Flex
-                    key={`${skill}-${index}`}
+                    key={`${capability}-${index}`}
                     fillWidth
                     gap="4"
                     direction="column"
                   >
-                    <Text variant="heading-strong-l">{skill.title}</Text>
+                    <Text variant="heading-strong-l">{capability.title}</Text>
                     <Text variant="body-default-m" onBackground="neutral-weak">
-                      {skill.description}
+                      {capability.description}
                     </Text>
-                    {skill.images.length > 0 && (
+                    {capability.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" gap="12" wrap>
-                        {skill.images.map((image, index) => (
+                        {capability.images.map((image: any, index: any) => (
                           <Flex
                             key={index}
                             border="neutral-medium"

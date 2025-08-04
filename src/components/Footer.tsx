@@ -1,13 +1,13 @@
 import { renderContent } from "@/app/resources";
 import { Flex, IconButton, SmartLink, Text } from "@/once-ui/components";
 import { useTranslations } from "next-intl";
-// import { person, social } from '@/app/resources'
+// import { company, social } from '@/app/resources'
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const t = useTranslations();
-  const { person, social } = renderContent(t);
+  const { company, social } = renderContent(t);
 
   return (
     <Flex
@@ -27,7 +27,7 @@ export const Footer = () => {
       >
         <Text variant="body-default-s" onBackground="neutral-strong">
           <Text onBackground="neutral-weak">© {currentYear} /</Text>
-          <Text paddingX="4">{person.name}</Text>
+          <Text paddingX="4">{company.name}</Text>
           <Text onBackground="neutral-weak">
             {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
             / Build by{" "}

@@ -1,16 +1,24 @@
-const baseURL = "demo.app";
+const baseURL = "obaol.com";
 
 // Enable localization
-const i18n = false;
-
+const i18n = true;
+// This can be auto-generated or edited manually for now
+export const supportedLocales = [
+  "en",
+  "hi",
+  "tm",
+  "ml",
+  // ... up to 100+ locales
+];
 // Manage localized content in the messages folder
 const i18nOptions = {
-  locales: ["en"], // A list of all locales that are supported, e.g. ['en','id']
+  locales: supportedLocales,
   defaultLocale: "en", // Locale used by default and as a fallback
 };
 
 const routes = {
   "/": true,
+  "/back": true,
   "/about": true,
   "/work": true,
   "/blog": true,

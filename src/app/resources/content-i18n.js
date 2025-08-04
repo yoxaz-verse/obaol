@@ -1,20 +1,19 @@
-
 const createI18nContent = (t) => {
-  const person = {
+  const company = {
     firstName: "OBAOL",
     lastName: "Supreme",
     get name() {
       return `${this.firstName} ${this.lastName}`;
     },
-    role: t("person.role"),
+    role: t("company.role"),
     avatar: "/images/OBAOL.png",
-    location: "OBAOL", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+    location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ["English", "Malayalam"], // optional: Leave the array empty if you don't want to display languages
   };
 
   const newsletter = {
     display: true,
-    title: <>{t("newsletter.title", { firstName: person.firstName })}</>,
+    title: <>{t("newsletter.title", { firstName: company.firstName })}</>,
     description: <>{t("newsletter.description")}</>,
   };
 
@@ -29,7 +28,7 @@ const createI18nContent = (t) => {
     {
       name: "LinkedIn",
       icon: "linkedin",
-      link: "https://www.linkedin.com/company/once-ui/",
+      link: "https://www.linkedin.com/company/obaol/",
     },
     {
       name: "Phone",
@@ -45,19 +44,22 @@ const createI18nContent = (t) => {
 
   const home = {
     label: t("home.label"),
-    title: t("home.title", { name: person.name }),
-    description: t("home.description", { role: person.role }),
+    title: t("home.title", { name: company.name }),
+    description: t("home.description"),
     headline: <>{t("home.headline")}</>,
-    subline: <>{t("home.subline")}</>,
+    subline: <>{t("home.subline.part1", { name: company.name })}</>,
   };
+  const servicesData = t.raw("about.work.services");
+  const capabilityData = t.raw("about.capabilities.capability");
+  const specialtiesData = t.raw("about.specialties.specialty");
 
   const about = {
     label: t("about.label"),
     title: t("about.label"),
     description: t("about.description", {
-      name: person.name,
-      role: person.role,
-      location: person.location,
+      name: company.name,
+      role: company.role,
+      location: company.location,
     }),
     tableOfContent: {
       display: true,
@@ -76,99 +78,53 @@ const createI18nContent = (t) => {
       description: <>{t("about.intro.description")}</>,
     },
     work: {
-      display: true, // set to false to hide this section
+      display: true,
       title: t("about.work.title"),
-      experiences: [
-        {
-          company: "FLY",
-          timeframe: t("about.work.experiences.FLY.timeframe"),
-          role: t("about.work.experiences.FLY.role"),
-          achievements: t("about.work.experiences.FLY.achievements").split(";"),
-          images: [
-            // optional: leave the array empty if you don't want to display images
-            {
-              src: "/images/projects/project-01/cover-01.jpg",
-              alt: "Once UI Project",
-              width: 16,
-              height: 9,
-            },
-          ],
-        },
-        {
-          company: "Creativ3",
-          timeframe: t("about.work.experiences.Creativ3.timeframe"),
-          role: t("about.work.experiences.Creativ3.role"),
-          achievements: t("about.work.experiences.Creativ3.achievements").split(
-            ";"
-          ),
-          images: [],
-        },
-      ],
+      services: Array.isArray(servicesData)
+        ? servicesData.map((exp) => ({
+            service: exp.service,
+            description: exp.description || [],
+            images: (exp.images || []).map((img) => ({
+              src: img.src,
+              alt: img.alt,
+              width: img.width,
+              height: img.height,
+            })),
+          }))
+        : [],
     },
-    studies: {
-      display: true, // set to false to hide this section
-      title: "Studies",
-      institutions: [
-        {
-          name: "University of Jakarta",
-          description: (
-            <>
-              {t(
-                `about.studies.institutions.University of Jakarta.description`
-              )}
-            </>
-          ),
-        },
-        {
-          name: "Build the Future",
-          description: (
-            <>{t("about.studies.institutions.Build the Future.description")}</>
-          ),
-        },
-      ],
+
+    specialties: {
+      display: true,
+      title: t("about.specialties.title"),
+      specialty: Array.isArray(specialtiesData)
+        ? specialtiesData.map((inst) => ({
+            name: inst.name,
+            description: Array.isArray(inst.description) ? (
+              inst.description.map((line, idx) => <div key={idx}>{line}</div>)
+            ) : (
+              <>{inst.description}</>
+            ),
+          }))
+        : [],
     },
-    technical: {
-      display: true, // set to false to hide this section
-      title: t("about.technical.title"),
-      skills: [
-        {
-          title: "Figma",
-          description: <>{t("about.technical.skills.Figma.description")}</>,
-          images: [
-            {
-              src: "/images/projects/project-01/cover-02.jpg",
-              alt: "Project image",
-              width: 16,
-              height: 9,
-            },
-            {
-              src: "/images/projects/project-01/cover-03.jpg",
-              alt: "Project image",
-              width: 16,
-              height: 9,
-            },
-          ],
-        },
-        {
-          title: "Next.js",
-          description: <>{t("about.technical.skills.Nextjs.description")}</>, // "." not accepted in next-intl namespace
-          images: [
-            {
-              src: "/images/projects/project-01/cover-04.jpg",
-              alt: "Project image",
-              width: 16,
-              height: 9,
-            },
-          ],
-        },
-      ],
+    capabilities: {
+      display: true,
+      title: t("about.capabilities.title"),
+      capability: Array.isArray(capabilityData)
+        ? capabilityData.map((capability) => ({
+            title: capability.title,
+            description: <>{capability.description}</>,
+            images: capability.images || [],
+          }))
+        : [],
     },
   };
 
   const blog = {
     label: t("blog.label"),
     title: t("blog.title"),
-    description: t("blog.description", { name: person.name }),
+    description: t("blog.description", { name: company.name }),
     // Create new blog posts by adding a new .mdx file to app/blog/posts
     // All posts will be listed on the /blog route
   };
@@ -176,91 +132,91 @@ const createI18nContent = (t) => {
   const work = {
     label: t("work.label"),
     title: t("work.title"),
-    description: t("work.description", { name: person.name }),
+    description: t("work.description", { name: company.name }),
     // Create new project pages by adding a new .mdx file to app/blog/posts
     // All projects will be listed on the /home and /work routes
   };
 
   const gallery = {
     label: t("gallery.label"),
-    title: t("gallery.title"),
-    description: t("gallery.description", { name: person.name }),
+    title: t("gallery.title", { firstName: company.firstName }),
+    description: t("gallery.description", { name: company.name }),
     // Images from https://pexels.com
     images: [
       {
         src: "/images/gallery/img (1).JPG",
-        alt: "image",
+        alt: "obaol supreme",
         orientation: "horizontal",
       },
       {
         src: "/images/gallery/img (2).JPG",
-        alt: "image",
+        alt: "obaol supreme",
         orientation: "vertical",
       },
       {
         src: "/images/gallery/img (3).JPG",
-        alt: "image",
+        alt: "obaol supreme",
         orientation: "vertical",
       },
       {
         src: "/images/gallery/img (8).JPG",
-        alt: "image",
+        alt: "obaol supreme",
         orientation: "horizontal",
       },
       {
         src: "/images/gallery/img (15).JPG",
-        alt: "image",
+        alt: "obaol supreme",
         orientation: "horizontal",
       },
       {
         src: "/images/gallery/img (4).JPG",
-        alt: "image",
+        alt: "obaol supreme",
         orientation: "vertical",
       },
       {
         src: "/images/gallery/img (5).JPG",
-        alt: "image",
+        alt: "obaol supreme",
         orientation: "vertical",
       },
       {
         src: "/images/gallery/img (6).JPG",
-        alt: "image",
+        alt: "obaol supreme",
         orientation: "vertical",
       },
       {
         src: "/images/gallery/img (13).JPG",
-        alt: "image",
+        alt: "obaol supreme",
         orientation: "horizontal",
       },
       {
         src: "/images/gallery/img (7).JPG",
-        alt: "image",
+        alt: "obaol supreme",
         orientation: "vertical",
       },
       {
         src: "/images/gallery/img (9).JPG",
-        alt: "image",
+        alt: "obaol supreme",
         orientation: "vertical",
       },
       {
         src: "/images/gallery/img (14).JPG",
-        alt: "image",
+        alt: "obaol supreme",
         orientation: "vertical",
       },
       {
         src: "/images/gallery/img (10).JPG",
-        alt: "image",
+        alt: "obaol supreme",
         orientation: "vertical",
       },
       {
         src: "/images/gallery/img (11).JPG",
-        alt: "image",
+        alt: "obaol supreme",
         orientation: "vertical",
       },
     ],
   };
   return {
-    person,
+    company,
     social,
     newsletter,
     home,

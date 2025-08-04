@@ -27,7 +27,7 @@ export async function generateMetadata({
   params: { locale: string };
 }) {
   const t = await getTranslations();
-  const { person, home } = renderContent(t);
+  const { company, home } = renderContent(t);
 
   return {
     metadataBase: new URL(`https://${baseURL}/${locale}`),
@@ -37,10 +37,10 @@ export async function generateMetadata({
       icon: "/favicon.ico", // ✅ Add this line
     },
     openGraph: {
-      title: `${person.firstName}'s Portfolio`,
+      title: `${company.firstName}'s Portfolio`,
       description: "Portfolio website showcasing my work.",
       url: baseURL,
-      siteName: `${person.firstName}'s Portfolio`,
+      siteName: `${company.firstName}'s Portfolio`,
       locale: "en_US",
       type: "website",
     },

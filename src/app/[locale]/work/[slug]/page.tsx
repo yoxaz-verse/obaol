@@ -86,10 +86,10 @@ export default function Project({ params }: WorkParams) {
 	}
 
 	const t = useTranslations();
-	const { person } = renderContent(t);
+	const { company } = renderContent(t);
 
-	const avatars = post.metadata.team?.map((person) => ({
-        src: person.avatar,
+	const avatars = post.metadata.team?.map((company) => ({
+        src: company.avatar,
     })) || [];
 
 	return (
@@ -113,8 +113,8 @@ export default function Project({ params }: WorkParams) {
 							: `https://${baseURL}/og?title=${post.metadata.title}`,
 							url: `https://${baseURL}/${params.locale}/work/${post.slug}`,
 						author: {
-							'@type': 'Person',
-							name: person.name,
+							'@type': 'Company',
+							name: company.name,
 						},
 					}),
 				}}
