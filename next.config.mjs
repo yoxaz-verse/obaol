@@ -3,15 +3,20 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const withMDX = mdx({
   extension: /\.mdx?$/,
-  options: {},
 });
 
 const withNextIntl = createNextIntlPlugin();
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+// Base config
+const baseConfig = {
   pageExtensions: ["ts", "tsx", "md", "mdx"],
+};
 
+// Wrap with both plugins
+let nextConfig = withNextIntl(withMDX(baseConfig));
+
+// ✅ Add `rewrites` after wrapping
+nextConfig = Object.assign({}, nextConfig, {
   async rewrites() {
     return [
       {
@@ -48,6 +53,6 @@ const nextConfig = {
       },
     ];
   },
-};
+});
 
-export default withNextIntl(withMDX(nextConfig));
+export default nextConfig;

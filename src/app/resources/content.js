@@ -86,13 +86,13 @@ const about = {
     title: "What is OBAOL?",
     description: (
       <>
-        OBAOL (Organised Buyers & Agro Online Link) is a next-gen B2B agro-trade
-        platform built to solve the biggest pain points in agricultural trading
-        — fake prices, scam leads, and unverified buyers. We empower verified
-        farmers, traders, and exporters to do clean, trusted business with daily
-        live pricing, digital product sharing, and end-to-end trade support. Our
-        mission is to transform Indian agriculture into a reliable, transparent,
-        and digitally connected economy.
+        OBAOL is a next-gen B2B agro-trade platform built to solve the biggest
+        pain points in agricultural trading — fake prices, scam leads, and
+        unverified buyers. We empower verified farmers, traders, and exporters
+        to do clean, trusted business with daily live pricing, digital product
+        sharing, and end-to-end trade support. Our mission is to transform
+        Indian agriculture into a reliable, transparent, and digitally connected
+        economy.
       </>
     ),
   },
