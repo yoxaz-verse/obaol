@@ -3,6 +3,10 @@
     {
       "source": "/overview/(.*)",
       "destination": "https://overview.obaol.com/$1"
+    },
+    {
+      "source": "/automate/(.*)",
+      "destination": "https://automate.obaol.com/$1"
     }
   ]
 }
