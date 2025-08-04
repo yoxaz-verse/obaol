@@ -180,12 +180,14 @@ export const Header = () => {
                 appearance: "none",
                 padding: "6px 12px",
                 borderRadius: "8px",
+                border: "1px solid #000",
                 fontSize: "14px",
                 fontWeight: 500,
                 backgroundColor: "#000",
                 color: "#fff",
                 cursor: "pointer",
                 textTransform: "uppercase",
+                boxShadow: "0 1px 2px rgba(0, 0, 0, 0.1)",
                 transition: "all 0.2s ease-in-out",
               }}
               onFocus={(e) => {
