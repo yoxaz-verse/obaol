@@ -6,8 +6,14 @@ const i18n = true;
 export const supportedLocales = [
   "en",
   "hi",
+  "ar",
   "tm",
   "ml",
+  "kn",
+  "tg",
+  "gr",
+  "rus",
+  "pr",
   // ... up to 100+ locales
 ];
 // Manage localized content in the messages folder

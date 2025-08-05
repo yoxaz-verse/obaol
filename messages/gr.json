@@ -1,0 +1,159 @@
+{
+  "company": {
+    "role": "Die Agrarbranche revolutionieren"
+  },
+  "newsletter": {
+    "title": "Bleiben Sie mit {firstName} über die neuesten Entwicklungen im Agrarhandel informiert",
+    "description": "Erhalten Sie Einblicke, Marktupdates und Exporttipps direkt in Ihr Postfach.",
+    "button": "Anmelden"
+  },
+  "home": {
+    "label": "Startseite",
+    "title": "{name} – Vertrauenswürdige Plattform für Agrarhandel",
+    "description": "Stärkung des indischen Agrarhandels mit verifizierten, aktuellen und transparenten Lösungen",
+    "headline": "Stärkung des indischen Agrarhandels durch Vertrauen, Technologie und Transparenz",
+    "subline": {
+      "part1": "{name} wurde für Lieferanten, Händler, Exporteure und Landwirte entwickelt und revolutioniert den Agrarhandel mit verifizierten Preisen, betrugssicheren Deals und einem nahtlosen Handelsfluss in ganz Indien und darüber hinaus. Treten Sie dem GAIN-Netzwerk bei, um mit echten Käufern in Kontakt zu treten, Marktupdates zu teilen und durch Vertrauen zu wachsen."
+    }
+  },
+  "about": {
+    "label": "Über OBAOL",
+    "title": "Über OBAOL",
+    "description": "Für die Zukunft der indischen Landwirtschaft – vertrauenswürdig, transparent, technologiegestützt",
+
+    "tableOfContent": {
+      "display": true,
+      "subItems": true
+    },
+
+    "avatar": {
+      "display": true
+    },
+
+    "calendar": {
+      "display": true,
+      "link": "https://cal.com/obaol/15min"
+    },
+
+    "intro": {
+      "display": true,
+      "title": "Was ist OBAOL?",
+      "description": "OBAOL ist eine moderne B2B-Agrarhandelsplattform, die die größten Herausforderungen im Agrarhandel löst – falsche Preise, Betrugsversuche und nicht verifizierte Käufer. Wir ermöglichen verifizierten Landwirten, Händlern und Exporteuren durch Live-Preise, digitale Produktpräsentation und umfassende Handelsunterstützung saubere und vertrauensvolle Geschäfte zu tätigen. Unsere Mission ist es, die indische Landwirtschaft in eine zuverlässige, transparente und digital vernetzte Wirtschaft zu transformieren."
+    },
+
+    "work": {
+      "display": true,
+      "title": "Unsere Kernleistungen",
+      "services": [
+        {
+          "service": "Beschaffung",
+          "description": [
+            "Partnerschaft mit verifizierten Landwirten und Lieferanten in ganz Indien zur Beschaffung von Gewürzen, Reis, Hülsenfrüchten und weiteren Agrarprodukten."
+          ],
+          "images": [
+            {
+              "src": "/images/gallery/img (8).JPG",
+              "alt": "OBAOL Beschaffung",
+              "width": 16,
+              "height": 9
+            }
+          ]
+        },
+        {
+          "service": "Qualitätskontrolle",
+          "description": [
+            "Strenge QC-Prozesse einschließlich Feuchtigkeitstests, Fremdstoffkontrollen und Herkunftsnachweisen zur Vermeidung von Missbrauch."
+          ],
+          "images": []
+        },
+        {
+          "service": "Verifiziertes Handelsnetzwerk (GAIN)",
+          "description": [
+            "Unsere exklusive GAIN-Community verbindet echte Käufer, verifizierte Lieferanten und Fachleute aus der Agrarbranche für vertrauenswürdige Geschäfte."
+          ],
+          "images": []
+        },
+        {
+          "service": "Logistik & Dokumentation",
+          "description": [
+            "Von der Verpackung bis zur Hafenzustellung – wir übernehmen Versand, Zertifizierungen und Exportkonformität für einen reibungslosen globalen Handel."
+          ],
+          "images": [
+            {
+              "src": "/images/gallery/img (13).JPG",
+              "alt": "OBAOL Logistik",
+              "width": 16,
+              "height": 9
+            }
+          ]
+        },
+        {
+          "service": "Live-Preise & Marktanalysen",
+          "description": [
+            "Echtzeit-Markt- und Exportpreise für wichtige Produkte wie Kurkuma, Kardamom und Reis helfen Mitgliedern, gefälschte Angebote zu vermeiden."
+          ],
+          "images": []
+        }
+      ]
+    },
+
+    "specialties": {
+      "display": true,
+      "title": "Globale Reichweite",
+      "specialty": [
+        {
+          "name": "Exportziele",
+          "description": [
+            "Europa: Deutschland, UK, Italien, Frankreich",
+            "Asien: Naher Osten, Südostasien, China",
+            "Nordamerika: USA, Kanada"
+          ]
+        },
+        {
+          "name": "Erfolgskennzahlen",
+          "description": [
+            "Über 500 verifizierte internationale Lieferanten",
+            "30 % kürzere Lieferzeit durch optimierte Prozesse",
+            "Über 150 verifizierte Produkte"
+          ]
+        }
+      ]
+    },
+
+    "capabilities": {
+      "display": true,
+      "title": "Unsere Fähigkeiten",
+      "capability": [
+        {
+          "title": "Digitale Beschaffungsexpertise",
+          "description": "Tiefes Produktwissen in Gewürzen, Reis, Hülsenfrüchten – gestützt durch verifizierte Felddaten und Echtzeit-Tools.",
+          "images": []
+        },
+        {
+          "title": "Technologie für Handel & Logistik",
+          "description": "Fortschrittliche Lieferkettenverfolgung, Dokumenten-Workflows und Partnernetzwerke für schnelle, regelkonforme Exporte.",
+          "images": []
+        }
+      ]
+    }
+  },
+
+  "blog": {
+    "label": "Blog",
+    "title": "Was OBAOL so treibt...",
+    "description": "Lesen Sie, was {name} in letzter Zeit gemacht hat"
+  },
+  "work": {
+    "label": "Katalog",
+    "title": "OBAOL-KATALOG",
+    "description": "Design- und Entwicklungsprojekte von {name}"
+  },
+  "gallery": {
+    "label": "Galerie",
+    "title": "Ein Blick in {firstName}",
+    "description": "Eine Fotosammlung von {name}"
+  },
+  "projectCard": {
+    "label": "Fallstudie lesen"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "company": {
+    "role": "Revolucionar o Comércio Agrícola"
+  },
+  "newsletter": {
+    "title": "Fique Atualizado com {firstName} sobre o Comércio Agrícola",
+    "description": "Receba insights, atualizações de mercado e dicas de exportação diretamente na sua caixa de entrada.",
+    "button": "Inscrever-se"
+  },
+  "home": {
+    "label": "Início",
+    "title": "{name} – Plataforma Confiável para Comércio Agrícola",
+    "description": "Fortalecendo o Comércio Agrícola da Índia com Soluções Verificadas, em Tempo Real e Transparentes",
+    "headline": "Fortalecendo o Comércio Agrícola da Índia com Confiança, Tecnologia e Transparência",
+    "subline": {
+      "part1": "Criado para fornecedores, comerciantes, exportadores e agricultores, o {name} está transformando o comércio agrícola ao possibilitar preços verificados, negociações seguras e fluxos de comércio eficientes por toda a Índia e além. Junte-se à Rede GAIN para se conectar com compradores reais, compartilhar atualizações de mercado e crescer com confiança."
+    }
+  },
+  "about": {
+    "label": "Sobre OBAOL",
+    "title": "Sobre OBAOL",
+    "description": "Construído para o Futuro da Agricultura Indiana — Confiável, Transparente e Tecnológico",
+
+    "tableOfContent": {
+      "display": true,
+      "subItems": true
+    },
+
+    "avatar": {
+      "display": true
+    },
+
+    "calendar": {
+      "display": true,
+      "link": "https://cal.com/obaol/15min"
+    },
+
+    "intro": {
+      "display": true,
+      "title": "O que é OBAOL?",
+      "description": "OBAOL é uma plataforma B2B de comércio agrícola de nova geração criada para resolver os principais problemas do setor — preços falsos, contatos fraudulentos e compradores não verificados. Nós capacitamos agricultores, comerciantes e exportadores verificados a fazer negócios confiáveis com preços ao vivo, compartilhamento digital de produtos e suporte completo ao comércio. Nossa missão é transformar a agricultura indiana em uma economia confiável, transparente e digitalmente conectada."
+    },
+
+    "work": {
+      "display": true,
+      "title": "Nossos Serviços Principais",
+      "services": [
+        {
+          "service": "Aquisição",
+          "description": [
+            "Parceria com agricultores e fornecedores verificados em toda a Índia para adquirir especiarias, arroz, leguminosas e outros produtos agrícolas."
+          ],
+          "images": [
+            {
+              "src": "/images/gallery/img (8).JPG",
+              "alt": "Aquisição OBAOL",
+              "width": 16,
+              "height": 9
+            }
+          ]
+        },
+        {
+          "service": "Controle de Qualidade",
+          "description": [
+            "Processos rigorosos de controle de qualidade incluindo testes de umidade, verificação de impurezas e documentação de origem para evitar fraudes."
+          ],
+          "images": []
+        },
+        {
+          "service": "Rede de Comércio Verificada (GAIN)",
+          "description": [
+            "Nossa comunidade exclusiva GAIN conecta compradores reais, fornecedores verificados e profissionais do agro para realizar negócios confiáveis."
+          ],
+          "images": []
+        },
+        {
+          "service": "Logística & Documentação",
+          "description": [
+            "Do empacotamento à entrega no porto — gerenciamos envio, certificações e conformidade de exportação para garantir um comércio global tranquilo."
+          ],
+          "images": [
+            {
+              "src": "/images/gallery/img (13).JPG",
+              "alt": "Logística OBAOL",
+              "width": 16,
+              "height": 9
+            }
+          ]
+        },
+        {
+          "service": "Preços ao Vivo & Inteligência de Mercado",
+          "description": [
+            "Preços de mercado e de exportação em tempo real para produtos como cúrcuma, cardamomo e arroz para ajudar os membros a evitarem cotações falsas."
+          ],
+          "images": []
+        }
+      ]
+    },
+
+    "specialties": {
+      "display": true,
+      "title": "Alcance Global",
+      "specialty": [
+        {
+          "name": "Destinos de Exportação",
+          "description": [
+            "Europa: Alemanha, Reino Unido, Itália, França",
+            "Ásia: Oriente Médio, Sudeste Asiático, China",
+            "América do Norte: EUA, Canadá"
+          ]
+        },
+        {
+          "name": "Destaques de Impacto",
+          "description": [
+            "Mais de 500 fornecedores internacionais verificados",
+            "Redução de 30% no tempo de entrega graças a operações otimizadas",
+            "Mais de 150 produtos verificados"
+          ]
+        }
+      ]
+    },
+
+    "capabilities": {
+      "display": true,
+      "title": "Nossas Capacidades",
+      "capability": [
+        {
+          "title": "Especialização em Aquisição Digital",
+          "description": "Conhecimento profundo em especiarias, arroz e leguminosas — baseado em dados verificados de cultivo e ferramentas de aquisição em tempo real.",
+          "images": []
+        },
+        {
+          "title": "Tecnologia para Comércio & Logística",
+          "description": "Rastreamento avançado da cadeia de suprimentos, fluxos de trabalho de documentação e rede de parceiros para exportações rápidas e conformes.",
+          "images": []
+        }
+      ]
+    }
+  },
+
+  "blog": {
+    "label": "Blog",
+    "title": "O que OBAOL tem feito...",
+    "description": "Leia o que {name} tem feito recentemente"
+  },
+  "work": {
+    "label": "Catálogo",
+    "title": "CATÁLOGO OBAOL",
+    "description": "Projetos de design e desenvolvimento por {name}"
+  },
+  "gallery": {
+    "label": "Galeria",
+    "title": "Por dentro de {firstName}",
+    "description": "Uma coleção de fotos por {name}"
+  },
+  "projectCard": {
+    "label": "Ler Estudo de Caso"
+  }
+}
